@@ -14,20 +14,3 @@ function getCurrentDate() {
     currentDate = setInterval(getCurrentDate, 1000)
 }
 getCurrentDate()
-
-
-// Menu
-
-let openMenu = document.querySelector('nav ul')
-
-let menuBtn = document.querySelector('.menuBtn')
-
-function menuShow() {
-    if (openMenu.classList.contains('open')) {
-        menuBtn.classList.remove('open')
-    } else {
-        openMenu.classList.add('open')
-    }
-
-
-}
