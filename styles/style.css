@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #050609;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/*======= Busca / Menu =========================== */
+
+.container {
+    width: 470px;
+    height: 820px;
+    background-color: white;
+    border-radius: 17px;
+    padding: 10px 0px;
+}
+
+.container span {
+    font-size: 1.6rem;
+    padding-left: 5px;
+    color: #131021;
+    padding-left: 10px;
+}
+
+.container .bg-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 430px;
+    height: 60px;
+    margin-top: 10px;
+    margin-inline: 20px;
+
+    padding-inline: 20px;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+}
+
+.container .bg-header .searchContainer {
+    width: 320px;
+    height: 54px;
+}
+
+.container .bg-header .searchContainer,
+.container .bg-header .menuContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.container .bg-header .searchContainer svg,
+.container .bg-header .menuContainer .mneuBtn svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.container .bg-header .searchContainer input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.container .bg-header .button {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #131021;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.container .bg-header .button:hover {
+    color: #B3521F;
+}
+
+/*======= Titulos =========================== */
+
+.mainTitle {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 106.5%;
+    text-align: center;
+    color: #131021;
+    margin-inline: 20px;
+    margin-bottom: 25px;
+}
+
+.container h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: #131021;
+    margin: 25px 0px;
+}
+
+/*======= Cards Slider =========================== */
+
+.embla {
+    overflow: hidden;
+    background-color: #f2f2f2;
+    width:100%;
+    height: 200px;
+    
+}
+.embla__container {
+    display: flex;
+    gap: 8px;
+}
+.embla__slide {
+    position: relative;
+    flex: 0 0 100%;
+    height: 200px;
+    background-color: #ac3d01;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.embla__slide:nth-child(1) {
+    background-image: url(/image/paginadelogin.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.embla__slide:nth-child(2),
+.embla__slide:nth-child(3),
+.embla__slide:nth-child(4) {
+    background-image: url(/image/paginaemconstrucao.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.circle {
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleInfo {
+    width: 100%;
+    height:30%;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+.titleInfo h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.titleInfo p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/*======= Redes socias =========================== */
+
+.socialContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.socialContainer h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #131021;
+    margin-bottom: 15px;
+}
+
+.socialContainer .redesContent {
+    width: 385px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 30px;
+    border-radius: 4px;
+
+    background: #B3521F;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.socialContainer .redesContent:hover {
+    background: #ac3d01;
+    transform: translateY(-4px);
+}
+
+.socialContainer .redesContent p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+}
